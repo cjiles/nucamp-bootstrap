@@ -1,0 +1,35 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    /* second font is font that will be used if browser cannot load first font */
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+h2 {
+    color: #3046C5;
+}
+
+header h2 {
+    color: #CEC8FF;
+    /* targets h2 element in the header, not the others */
+}
+
+footer {
+    background-image: linear-gradient(#CEC8FF, white);
+    padding: 20px 0;
+    /* 20 px for top and bottom padding, 0 padding for left and right */
+}
+
+.jumbotron {
+    padding: 30px;
+    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom:1px ridge;
+    min-height: 200px;
+}

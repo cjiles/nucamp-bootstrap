@@ -5,12 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <!--Bootstrap css-->
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <!--Using google web fonts that are free to the public. This has to placed after Bootstrap CSS to make sure it overrides the Bootstrap fonts-->
 
         <title>NuCamp: A Better Way To Camp</title>
     </head>
     <body>
-        <header class="jumbotron">
-            <!--Adds jumbotron space in header-->
+        <header class="jumbotron jumbotron-fluid">
+            <!--Adds jumbotron space in header. Jumbotron is a section that calls attention to that section of the page. Jumbotron fluid removes rounded edges of jumbotron -->
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -22,17 +27,19 @@
         </header>
 
         <div class="container">
-            <div class="row">
+            <div class="row row-content align-items-center">
+            <!--calls the row-content from css file.  Aligns rows content to center--> 
                 <div class="col-sm-4 order-sm-last col-md-3">
-                <!--Reorders columns without reordering code-->    
-                    <h2> Discover & Review </h2>
+                <!--Sm-4 Takes up four columns for small viewports, Md-3 Takes up three columns for medium viewports, order-sm-last Reorders columns without reordering code-->    
+                    <h2 class="text-sm-right"> Discover & Review </h2>
+                    <!--Aligns text to right on small viewports-->
                 </div>
                 <div class="col">
                     <h3> Our Campsites </h3>
                     <p> Explore our growing database of curated campsites and leave your own reviews! </p>
                 </div>
             </div>   
-            <div class="row">
+            <div class="row row-content align-items-center">
                 <div class="col-sm-4 col-md-3">
                     <h2> Featured Campsites </h2>
                 </div>
@@ -41,9 +48,9 @@
                     <p> Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers. </p>
                 </div>
             </div>  
-            <div class="row">
+            <div class="row row-content align-items-center">
                 <div class="col-sm-4 order-sm-last col-md-3">
-                    <h2> Our Community Partners </h2>
+                    <h2 class="text-sm-right"> Our Community Partners </h2>
                 </div>
                 <div class="col">
                     <h3> Bootstrap Outfitters </h3>
@@ -56,7 +63,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4 col-sm-2 offset-1">
-                    <!--Moves columns over by offset number-->
+                    <!--Moves columns to the right by offset number-->
                         <h5> Links </h5>
                         <ul class="list-unstyled"> 
                         <!-- removes bullets -->
@@ -66,14 +73,15 @@
                                 <li> <a href="#"> Contact </a></li>
                             </ul>   
                     </div>
-                    <div class="col-6 col-sm-5">
+                    <div class="col-6 col-sm-5 text-center">
+                    <!--Text-center, centers the text in this section-->    
                         <h5> Social </h5>
                         <a href="http://instagram.com/"> Instagram </a>
                         <a href="http://facebook.com"> Facebook </a>
                         <a href="http://twitter.com"> Twitter </a>
                         <a href="http://youtube.com"> YouTube</a>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 text-center">
                         Tel: 1-206-555-1234 <br />
                         Email: campsites@nucamp.co
                     </div>
