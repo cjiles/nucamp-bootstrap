@@ -16,7 +16,7 @@ header h2 {
     /* targets h2 element in the header, not the others */
 }
 
-footer {
+.site-footer {
     background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
     /* 20 px for top and bottom padding, 0 padding for left and right */
