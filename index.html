@@ -36,7 +36,7 @@
             <!--Navbar-expand-sm is for small view ports. Navbar dark is to lighten up default font color, sticky-top sticks navbar to top of page. -->
             <div class="container">
                 <a class="navbar-brand" href="#"> <img src="img/logo.png" height="30" width="30" /> </a>
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                     <!--ml-auto pushes toggler menu to right-->
                     <span class="navbar-toggler-icon"></span>
                 <!-- Button for Navbar.  Is in the position of code -->
@@ -65,6 +65,7 @@
                 <div class="col">
                     <div class="media">
                         <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrum Trail" />
+                        <!--d flex class is there to deal with bug in IE 10 and 11, recommended by bootstrap-->
                         <div class="media-body align-self-center">                    
                             <h3> Our Campsites </h3>
                             <p class="d-none d-sm-block"> Explore our growing database of curated campsites and leave your own reviews! </p>
