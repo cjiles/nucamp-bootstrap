@@ -28,6 +28,10 @@
                            <h1> NuCamp </h1>
                             <h2> a better way to camp </h2>
                     </div>
+                    <div class="col-md-4 col-xl-2 mt-4">
+                        <!--A tags only need roles not type-->
+                        <a role="button" class="btn btn-info btn-lg" href="#reserveForm"> Reserve a Campsite </a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -55,17 +59,18 @@
         </nav>
 
         <div class="container">
-            <div class="row row-content align-items-center">
             <!--calls the row-content from css file.  Aligns rows content to center--> 
+            <div class="row row-content align-items-center">
+                 <!--Sm-4 Takes up four columns for small viewports, Md-3 Takes up three columns for medium viewports, order-sm-last Reorders columns without reordering code--> 
                 <div class="col-sm-4 order-sm-last col-md-3">
-                <!--Sm-4 Takes up four columns for small viewports, Md-3 Takes up three columns for medium viewports, order-sm-last Reorders columns without reordering code-->    
-                    <h2 class="text-sm-right"> Discover & Review </h2>
                     <!--Aligns text to right on small viewports-->
+                    <h2 class="text-sm-right"> Discover & Review </h2>
+                    
                 </div>
                 <div class="col">
                     <div class="media">
+                         <!--d flex class is there to deal with bug in IE 10 and 11, recommended by bootstrap-->
                         <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrum Trail" />
-                        <!--d flex class is there to deal with bug in IE 10 and 11, recommended by bootstrap-->
                         <div class="media-body align-self-center">                    
                             <h3> Our Campsites </h3>
                             <p class="d-none d-sm-block"> Explore our growing database of curated campsites and leave your own reviews! </p>
@@ -78,31 +83,74 @@
                     <h2> Featured Campsites </h2>
                 </div>
                 <div class="col">
-                    <h3> React Lake Campground </h3>
-                    <p class="d-none d-sm-block"> Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers. </p>
+                    <div class="media">
+                        <div class="media-body align-self-center">
+                            <h3> React Lake Campground </h3>
+                             <p class="d-none d-sm-block"> Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers. </p>
+                        </div>
+                        <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
+                    </div>
                 </div>
-            </div>  
+            </div>    
             <div class="row row-content align-items-center">
                 <div class="col-sm-4 order-sm-last col-md-3">
                     <h2 class="text-sm-right"> Our Community Partners </h2>
                 </div>
                 <div class="col">
                     <div class="media">
-                        <img class="d-flex mr-4 img-thumbnail" src="img/bootstrap-thumb.png" alt="Boostsrap Outfitters" />
+                        <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Boostsrap Outfitters" />
                         <div class="media-body align-self-center">
                             <h3> Bootstrap Outfitters </h3>
                             <p class="d-none d-sm-block"> Bootstrap Outfitters supplies you with gear you need at prices you can't beat. </p>
                         </div>
                     </div>        
                 </div>
-            </div>       
+            </div>   
+            <div class="row row-content">
+                <div class="col-sm-6 mx-auto">
+                    <div class="card">
+                        <h3 class="card-header bg-info text-white"> Reserve a Campsite </h3>  
+                        <div class="card-body">
+                            <form id="reserveForm">
+                                <div class="form-group row">
+                                    <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                    <div class="col">
+                                        <select id="numCampers">
+                                            <!--The selected option is used to show the default value-->
+                                            <option selected> Select... </option>
+                                            <option value="1"> 1 </option>
+                                            <option value="2"> 2 </option>
+                                            <option value="3"> 3 </option>
+                                            <option value="4"> 4 </option>
+                                            <option value="5"> 5 </option>
+                                            <option value="6"> 6 </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="date" class="col-sm-6 col-form label"> Date </label>
+                                    <div class="col">
+                                        <input type="date" class="form-control" id="date" name="date" />                                        
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-primary"> Reserve </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>    
         </div>
 
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 col-sm-2 offset-1">
                     <!--Moves columns to the right by offset number-->
+                    <div class="col-4 col-sm-2 offset-1">
                         <h5> Links </h5>
                         <ul class="list-unstyled"> 
                         <!-- removes bullets -->
@@ -112,8 +160,8 @@
                                 <li> <a href="contactus.html"> Contact </a></li>
                             </ul>   
                     </div>
-                    <div class="col-6 col-sm-5 text-center">
-                    <!--Text-center, centers the text in this section-->    
+                    <!--Text-center, centers the text in this section-->  
+                    <div class="col-6 col-sm-5 text-center">   
                         <h5> Social </h5>
                         <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                         <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
