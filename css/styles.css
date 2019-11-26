@@ -39,8 +39,17 @@ header h2 {
     background-color: #901CAD;
 }
 
-.tab-content {
+/* .tab-content {
     border: 1px solid #DDD;
     border-top:none;
     padding: 10px;
+} */
+
+.carousel-caption {
+    /* 50% opaque black */
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.carousel {
+    border: solid #5637DD;
 }
