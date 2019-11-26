@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-md-4 col-xl-2 mt-4">
                         <!--A tags only need roles not type-->
-                        <a role="button" class="btn btn-info btn-lg" href="#reserveForm"> Reserve a Campsite </a>
+                        <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>"> Reserve a Campsite </a>
                     </div>
                 </div>
             </div>
@@ -177,7 +177,14 @@
         </footer>
          <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
          <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+         <!--Popper is needed for Popovers, Tooltips, and most dropdown menus in bootstrap -->
          <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
          <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script>
+            $(function (){
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
     </body>
 </html>
