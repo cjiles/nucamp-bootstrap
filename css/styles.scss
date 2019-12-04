@@ -1,0 +1,64 @@
+$color-primary: #3046C5;
+$color-secondary: #5637dd;
+$color-pale: #CEC8FF;
+$color-mid: #901CAD;
+$color-dark: #60106b;
+$color-transparent-black: rgba(0, 0, 0, 0.5);
+
+body {
+    font-family: "Open Sans", sans-serif;
+    /* second font is font that will be used if browser cannot load first font */
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+h2 {
+    color: $color-primary;
+}
+
+header {
+    h2 {
+    color: $color-pale;
+    /* targets h2 element in the header, not the others */
+    }
+}
+
+.site-footer {
+    background-image: linear-gradient($color-pale, white);
+    padding: 20px 0;
+    /* 20 px for top and bottom padding, 0 padding for left and right */
+}
+
+.jumbotron {
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
+    color: white;
+    margin:0;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom:1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: $color-mid;
+}
+
+.carousel-caption {
+    /* 50% opaque black */
+    background-color: $color-transparent-black;
+}
+
+.carousel {
+    border: solid $color-secondary;
+}
+
+#carouselButton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

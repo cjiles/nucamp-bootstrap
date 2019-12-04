@@ -1,61 +1,44 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    /* second font is font that will be used if browser cannot load first font */
-}
+  font-family: "Open Sans", sans-serif;
+  /* second font is font that will be used if browser cannot load first font */ }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
-}
+  font-family: "Lobster", cursive; }
 
 h2 {
-    color: #3046C5;
-}
+  color: #3046C5; }
 
 header h2 {
-    color: #CEC8FF;
-    /* targets h2 element in the header, not the others */
-}
+  color: #CEC8FF;
+  /* targets h2 element in the header, not the others */ }
 
 .site-footer {
-    background-image: linear-gradient(#CEC8FF, white);
-    padding: 20px 0;
-    /* 20 px for top and bottom padding, 0 padding for left and right */
-}
+  background-image: linear-gradient(#CEC8FF, white);
+  padding: 20px 0;
+  /* 20 px for top and bottom padding, 0 padding for left and right */ }
 
 .jumbotron {
-    padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
-    color: white;
-    margin:0;
-}
+  padding: 30px;
+  background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
+  color: white;
+  margin: 0; }
 
 .row-content {
-    padding: 50px 0;
-    border-bottom:1px ridge;
-    min-height: 200px;
-}
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px; }
 
 .navbar {
-    background-color: #901CAD;
-}
-
-/* .tab-content {
-    border: 1px solid #DDD;
-    border-top:none;
-    padding: 10px;
-} */
+  background-color: #901CAD; }
 
 .carousel-caption {
-    /* 50% opaque black */
-    background-color: rgba(0,0,0, 0.5);
-}
+  /* 50% opaque black */
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel {
-    border: solid #5637DD;
-}
+  border: solid #5637dd; }
 
-#carouselButton{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0; }

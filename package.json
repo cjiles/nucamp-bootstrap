@@ -5,13 +5,15 @@
   "main": "index.html",
   "scripts": {
     "lite": "lite-server",
+    "scss":"node-sass -o css/ css/",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Chiketa Jiles",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.12.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
