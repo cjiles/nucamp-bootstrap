@@ -31,7 +31,8 @@
                     </div>
                     <div class="col-md-4 col-xl-2 mt-4">
                         <!--A tags only need roles not type-->
-                        <button type="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal"> Reserve a Campsite </button>
+                        <!--data-toggle="modal" data-target="#reserveModal"  removed and add jquery to script.js-->
+                        <button type="button" class="btn btn-lg btn-info" id="reserveButton"> Reserve a Campsite </button>
                         <!--a role ="button" href="#reserveForm"-->
                         <!--Tooltip:  data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>" -->
                     </div>
@@ -42,8 +43,10 @@
         <div id="reserveModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header bg-info text-white">
+                    <!--remove bg info and text-white to pick up scss updates.  Inline styles override css-->
+                    <div class="modal-header">
                         <h3 class="modal-title"> Reserve a Campsite</h3>
+                        <!--data-dismiss="modal"-->
                         <button type="button" class="close" data-dismiss="modal"> &times; </button>
                     </div>
                     <div class="modal-body">
@@ -114,7 +117,8 @@
                         <!--fa class inputs icons from FontAwesome framework which was installed in folder-->
                     </ul>
                     <span class="navbar-text ml-auto">
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <!--data-toggle="modal" data-target="#loginModal" removed and add jquery to scripts-->
+                        <a role="button" id="loginButton">
                         <i class="fa fa-sign-in"> </i> Login </a>
                     </span>
                 </div>
